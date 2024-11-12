@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <!-- Выключатель для выбора горячего/холодного кофе -->
+    <TextView
+        android:id="@+id/temperature_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Температура кофе:"
+        android:textSize="18sp"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <!-- Переключатель для выбора температуры -->
+        <Switch
+            android:id="@+id/temperature_switch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Горячий/Холодный"
+            android:checked="false"
+            tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+        <!-- Изображение справа от переключателя -->
+        <ImageView
+            android:id="@+id/temperature_image"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="16dp"
+            android:src="@drawable/blue_circle" />
+
+    </LinearLayout>
+
+
+
+    <!-- Флажки для выбора добавок -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Выберите добавки:"
+        android:textSize="18sp" />
+
+    <CheckBox
+        android:id="@+id/milk_checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Молоко" />
+
+    <CheckBox
+        android:id="@+id/cream_checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Сливки" />
+
+    <CheckBox
+        android:id="@+id/sugar_checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Сахар" />
+
+    <CheckBox
+        android:id="@+id/syrup_checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Сироп" />
+
+    <!-- Переключатели для выбора способа доставки -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Способ доставки:"
+        android:textSize="18sp" />
+
+    <RadioGroup
+        android:id="@+id/delivery_group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/pickup_radio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Самовывоз" />
+
+        <RadioButton
+            android:id="@+id/delivery_radio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Доставка" />
+    </RadioGroup>
+
+    <ImageButton
+        android:id="@+id/submit_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/icon"
+        android:contentDescription="Доставить"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:padding="10dp"
+        android:scaleType="centerInside" />
+
+</LinearLayout>

@@ -1,0 +1,5 @@
+<resources>
+    <string name="hint_text_1">Кому</string>
+    <string name="hint_text_2">Сообщение</string>
+    <string name="button_text">Отправить</string>
+</resources>

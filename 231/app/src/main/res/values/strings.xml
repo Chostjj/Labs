@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">ЛР23.1</string>
+    <string name="hint_text_11">Кому</string>
+    <string name="hint_text_1">Введите email адресс</string>
+    <string name="hint_text_2">Тема</string>
+    <string name="hint_text_3">Сообщение</string>
+    <string name="button_text">Отправить</string>
+</resources>

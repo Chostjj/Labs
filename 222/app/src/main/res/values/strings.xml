@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">CoffeeOrder</string>
+    <string name="temperature_coffee">Температура кофе</string>
+    <string name="hot_cold_switch">Горячий/Холодный</string>
+    <string name="additions">Добавки</string>
+    <string name="milk">Молоко</string>
+    <string name="cream">Сливки</string>
+    <string name="sugar">Сахар</string>
+    <string name="syrup">Сироп</string>
+    <string name="delivery_method">Способ доставки</string>
+    <string name="pickup">Самовывоз</string>
+    <string name="delivery">Доставка</string>
+    <string name="deliver_button">Доставить</string>
+    <string name="order_summary">Ваш заказ</string>
+    <string name="toast_message">Заказ выполнен студентом: Иванов</string>
+</resources>
