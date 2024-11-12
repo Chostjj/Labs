@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">Пицца и закуски</string>
+    <string name="create_order">Сделать заказ</string>
+    <string name="create_order_title">Сделать заказ </string>
+    <string name="action_share">Поделиться</string>
+    <string name="title_top">Top fragment</string>
+    <string name="home_tab">Главная</string>
+    <string name="pizza_tab">Пицца</string>
+    <string name="pasta_tab">Паста</string>
+    <string name="store_tab">Рестораны</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="order_name_hint">Пожалуйста, введите свое имя</string>
+    <string name="order_details_hint">Пожалуйста, введите свой заказ</string>
+    <string name="company_name">Пицца и закуски</string>
+    <string name="restaurant_image">Изображение ресторана</string>
+    <string name="home_text">С тех пор, как мы открыли свои двери в 2022 году, "Пицца и закуски" заработала репутацию одного из лучших ресторанов Пинского района.</string>
+
+    <string-array name="pizzas">
+        <item>Диаволо</item>
+        <item>Фунги</item>
+    </string-array>
+
+    <string-array name="pasta">
+        <item>Спагетти фирменное</item>
+        <item>Лазанья</item>
+    </string-array>
+
+    <string-array name="stores">
+        <item>Пинск</item>
+        <item>Галево</item>
+    </string-array>
+</resources>
