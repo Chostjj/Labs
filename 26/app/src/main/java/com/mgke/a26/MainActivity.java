@@ -15,7 +15,6 @@ public class MainActivity extends AppCompatActivity implements WorkoutListFragme
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
     }
-
     @Override
     public void itemClicked(long id) {
         View fragmentContainer = findViewById(R.id.fragment_container);
@@ -41,5 +40,4 @@ public class MainActivity extends AppCompatActivity implements WorkoutListFragme
             startActivity(intent);
         }
     }
-
 }

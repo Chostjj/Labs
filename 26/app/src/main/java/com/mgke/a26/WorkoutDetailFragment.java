@@ -10,6 +10,7 @@ import androidx.fragment.app.FragmentTransaction;
 
 public class WorkoutDetailFragment extends Fragment {
     private long workoutId;
+
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -30,40 +31,25 @@ public class WorkoutDetailFragment extends Fragment {
             workoutId = savedInstanceState.getLong("workoutId");
         }
     }
-    @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.fragment_workout_detail, container, false);
-
-        // Добавление таймера как динамического фрагмента
-        if (savedInstanceState == null) {
-            StopwatchFragment stopwatchFragment = new StopwatchFragment();
-            FragmentTransaction transaction = getChildFragmentManager().beginTransaction();
-            transaction.add(R.id.stopwatch_container, stopwatchFragment);
-            transaction.commit();
-        }
-
-        return view;
+    @Override public View onCreateView (LayoutInflater inflater, ViewGroup container, Bundle
+            savedInstanceState){
+        return inflater.inflate(R.layout.fragment_workout_detail, container, false);
     }
-
-    @Override
-    public void onStart() {
+    @Override public void onStart () {
         super.onStart();
         View view = getView();
         if (view != null) {
-            TextView title = view.findViewById(R.id.textTitle);
+            TextView title = (TextView) view.findViewById(R.id.textTitle);
             Workout workout = Workout.workouts[(int) workoutId];
             title.setText(workout.getName());
-            TextView description = view.findViewById(R.id.textDescription);
+            TextView description = (TextView) view.findViewById(R.id.textDescription);
             description.setText(workout.getDescription());
         }
     }
-
-    public void setWorkout(long id) {
-        this.workoutId = id;
-    }
-
-    @Override
-    public void onSaveInstanceState(Bundle savedInstanceState) {
+    @Override public void onSaveInstanceState (Bundle savedInstanceState){
         savedInstanceState.putLong("workoutId", workoutId);
+    }
+    public void setWorkout ( long id){
+        this.workoutId = id;
     }
 }
